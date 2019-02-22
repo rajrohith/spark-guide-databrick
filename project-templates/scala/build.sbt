@@ -82,6 +82,6 @@ scalacOptions ++= List("-feature", "-deprecation", "-unchecked", "-Xlint")
 
 // ScalaTest settings.
 // Ignore tests tagged as @Slow (they should be picked only by integration test)
-testOptions in Test += Tests.Argument(TestFrameworks.ScalaTest, "-l",
+testOptions in Test += Tests.Argument(TestFrameworks.ScalaTest, "-2",
   "org.scalatest.tags.Slow", "-u", "target/junit-xml-reports", "-oD", "-eS")
 
